@@ -13,14 +13,14 @@ From the **authorization server** module and **client application** module respe
 
 The above commands will start the authorization server on: http://localhost:8081/auth  and client application on
 
-http://localhost:8082/client
+http://localhost:8082/app1
 
 ## How to test
 
-* Using a browser go to: http://localhost:8082/client/its-me - This will authenticate the current user against
+* Using a browser go to: http://localhost:8082/app1/its-me - This will authenticate the current user against
 the authorization server. The username/password is john/123. You should see: _The principal's name is: john_
 
-* Using a browser go to: http://localhost:8082/client/its-also-me - This will access the http://localhost:8081/auth/user/also-me protected resource on the resource server.
+* Using a browser go to: http://localhost:8082/app1/its-also-me - This will access the http://localhost:8081/auth/user/also-me protected resource on the resource server.
 You should get: _Message from auth server: The principal's name is: SampleClientId_
 
 
